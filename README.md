@@ -4,32 +4,35 @@ Neste repositório apresento o resultado do encapsulamento de uma aplicação co
 
 Há diversos benefícios em encapsular uma aplicação em container, mas o principal é a <b>portabilidade</b>, já que o projeto pode ser executado em qualquer máquina que possua o [Docker](https://docs.docker.com/get-docker/) instalado, tornando a Aplicação independente de sistema operacional e/ou qualquer outra configuração/instalação.
 
-## Iniciativa Kubernetes - Aula 01:
+### Iniciativa Kubernetes - Aula 01:
 
 Este repositório é parte da atividade pártica da Aula 01 do Curso [Iniciativa Kubernetes](https://iniciativakubernetes.com.br/), ocorrido de 28 de março a 01 de abril de 2022, promovido pela [Kubedev.io](https://kubedev.io/).
 
-### 🛒 Requisitos do Projeto:
+## 🛒 Requisitos do Projeto:
 
 Antes de começar, você vai precisar ter instalado em sua máquina os seguintes recursos:
 
 - [Git](https://git-scm.com/); e
 - [Docker](https://docs.docker.com/get-docker/).
 
-### 📀 Para executar o Projeto:
+## 📀 Executando o Projeto:
 
-Para testarmos a aplicação, temos que executar os quatro passos a seguir:
-1. [Fazer downloado do Projeto](#download-github)
+Para testarmos a aplicação, temos que executar os 4 passos a seguir:
+1. [Fazer download do Projeto](#download-github)
 2. [Criar Imagem Docker](#build-image)
-2. [Executar Contanier](#run-container)
+2. [Executar Container](#run-container)
 3. [Acessar a Aplicação](#acessando-app)
 
 <a name="download-github"></a>
-#### Fazer downloado do Projeto
+### 1. Fazer downloado do Projeto
 
-Baixe este Repositório, executando o comando Git: `git clone https://github.com/aguiardafa/conversao-temperatura`;
+- Baixe este Repositório, executando o comando Git: 
+```bash
+git clone https://github.com/aguiardafa/conversao-temperatura
+```
 
 <a name="build-image"></a>
-#### Criar Imagem Docker do Projeto
+### 2. Criar Imagem Docker do Projeto
 
 1. Acesse a pasta `src` do Repositório pelo terminal de comandos;
 2. Execute o comando abaixo para criar a imagem Docker do projeto:
@@ -47,7 +50,7 @@ aguiardafa/conversao-temperatura     v1        704a74ad5acf   2 hours ago     98
 ```
 
 <a name="run-container"></a>
-#### Executar Contanier do Projeto
+### 3. Executar Container do Projeto
 
 1. Ainda na pasta `src` do Repositório, pelo terminal de comandos;
 2. Execute o comando abaixo, que irá criar e executar o Container do projeto, com base na imagem criada:
@@ -65,17 +68,15 @@ CONTAINER ID   IMAGE                                 COMMAND                  CR
 ```
 
 <a name="acessando-app"></a>
-#### Acessar a Aplicação NodeJS
+### 4. Acessar a Aplicação NodeJS
 
-1. Acesse a url `http://localhost:8080` pelo navegador para visualizar o Sistema;
-2. Se os passos anteriores foram executados corretamente, a resposta será a tela abaixo:
+1. Pelo navegador de sua preferência, acesse a url `http://localhost:8080` para visualizar a Aplicação;
+2. Se os passos anteriores foram executados corretamente, a resposta será semelhante a tela abaixo:
 <p align="center"><img alt="Conversor de temperatura" id="foto1" title="#FotoProjeto" height="450px" src="https://raw.githubusercontent.com/aguiardafa/conversao-temperatura/main/.github/conversor-de-temperatura.png" /></p>
 
 ## 👨‍💻Autor
-
 <a href="https://github.com/aguiardafa" style="text-decoration: none;">
 <img style="border-radius: 50% !important;" src="https://avatars.githubusercontent.com/u/16319889?v=4" width="48px" height="48px" alt="Diego Aguiar"/>
 <br />
 <span> Feito por Diego Aguiar 👋 Entre em contato! </span> 
 </a>
-
