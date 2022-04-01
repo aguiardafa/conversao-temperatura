@@ -1,0 +1,36 @@
+# Deployment da Aplicação web Conversão Temperatura
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: meudeployment
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: web
+          image: aguiardafa/conversao-temperatura:v1
+          ports:
+            - containerPort: 8080
+
+---
+
+# Service da Aplicação
+apiVersion: v1
+kind: Service
+metadata:
+  name: web
+spec:
+  selector:
+    app: web
+  ports:
+    - protocol: TCP
+      port: 8080
+      nodePort: 30000
+  type: NodePort
